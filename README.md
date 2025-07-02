@@ -81,22 +81,34 @@ Just copy the `Backport.swift` file into your project. That’s it.
 
 ## Backported Modifiers
 
-| iOS Version | Modifier                                | Description                                      |
-|-------------|------------------------------------------|--------------------------------------------------|
-| iOS 18.0    | `presentationSizeForm()`                | Applies `.presentationSizing(.form)`            |
-| iOS 18.0    | `zoom(sourceID:in:)`                    | Applies a zoom navigation transition             |
-| iOS 18.0    | `matchedTransitionSource(id:in:)`       | Marks a view as a matched transition source      |
-| iOS 18.1    | `imagePlayground(_:completion:)`        | Presents an image playground sheet               |
-| iOS 26.0    | `glassEffect(_:in:isEnabled:)`          | Applies a glass effect                           |
-| iOS 26.0    | `glassEffect(_:in:isEnabled:fallback:)`| Glass effect with fallback for unsupported OS    |
-| iOS 26.0    | `glassButtonStyle()`                    | Applies the glass button style                   |
-| iOS 26.0    | `glassEffectTransition(_:isEnabled:)`   | Animates glass transitions                       |
-| iOS 26.0    | `glassEffectID(_:in:)`                  | Tags glass views for matched animations          |
-| iOS 26.0    | `backgroundExtensionEffect()`           | Extends background beyond safe areas             |
-| iOS 26.0    | `scrollEdgeEffectStyle(_:for:)`         | Customizes scroll view edge effects              |
-| iOS 26.0    | `scrollEdgeEffectDisabled(_:for:)`      | Disables scroll edge effects                     |
-| iOS 26.0    | `symbolColorRenderingMode(_:)`          | Sets symbol image rendering mode                 |
-| iOS 26.0    | `symbolVariableValueMode(_:)`           | Sets variable value rendering mode               |
+### iOS 18.0
+
+| Modifier                                | Description                                      |
+|------------------------------------------|--------------------------------------------------|
+| `presentationSizeForm()`                | Applies `.presentationSizing(.form)`            |
+| `zoom(sourceID:in:)`                    | Applies a zoom navigation transition             |
+| `matchedTransitionSource(id:in:)`       | Marks a view as a matched transition source      |
+
+### iOS 18.1
+
+| Modifier                                | Description                                      |
+|------------------------------------------|--------------------------------------------------|
+| `imagePlayground(_:completion:)`        | Presents an image playground sheet               |
+
+### iOS 26.0
+
+| Modifier                                | Description                                      |
+|------------------------------------------|--------------------------------------------------|
+| `glassEffect(_:in:isEnabled:)`          | Applies a glass effect                           |
+| `glassEffect(_:in:isEnabled:fallback:)`| Glass effect with fallback for unsupported OS    |
+| `glassButtonStyle()`                    | Applies the glass button style                   |
+| `glassEffectTransition(_:isEnabled:)`   | Animates glass transitions                       |
+| `glassEffectID(_:in:)`                  | Tags glass views for matched animations          |
+| `backgroundExtensionEffect()`           | Extends background beyond safe areas             |
+| `scrollEdgeEffectStyle(_:for:)`         | Customizes scroll view edge effects              |
+| `scrollEdgeEffectDisabled(_:for:)`      | Disables scroll edge effects                     |
+| `symbolColorRenderingMode(_:)`          | Sets symbol image rendering mode                 |
+| `symbolVariableValueMode(_:)`           | Sets variable value rendering mode               |
 
 ## Contributing
 
